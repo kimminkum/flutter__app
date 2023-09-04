@@ -5,12 +5,37 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Text('안녕')
+      // home: Text('안녕')
+      // home: Icon(Icons.star)
+      // home: Image(
+      //   image: AssetImage('assets/bleach.jpg')
+      // )
+      // home: DecoratedBox(
+      //   decoration: BoxDecoration(
+      //     color: Colors.blue,
+      //   ),
+      //   child: SizedBox(
+      //     width: 50,
+      //     height: 50,
+      //   ),
+      // ),
+      // home:SizedBox()
+      home: Center(
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            color: Colors.blue,
+          ),
+          child: SizedBox(
+            width: 50,
+            height: 50,
+          ),
+        ),
+      ),
     );
   }
 }
