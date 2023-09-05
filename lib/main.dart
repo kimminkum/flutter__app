@@ -9,31 +9,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      // home: Text('안녕')
-      // home: Icon(Icons.star)
-      // home: Image(
-      //   image: AssetImage('assets/bleach.jpg')
-      // )
-      // home: DecoratedBox(
-      //   decoration: BoxDecoration(
-      //     color: Colors.blue,
-      //   ),
-      //   child: SizedBox(
-      //     width: 50,
-      //     height: 50,
-      //   ),
-      // ),
-      // home:SizedBox()
-      home: Center(
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: Colors.blue,
-          ),
-          child: SizedBox(
-            width: 50,
-            height: 50,
-          ),
+    return MaterialApp(
+      home: Scaffold(
+        body: Row(
+          children: [
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ],
         ),
       ),
     );
